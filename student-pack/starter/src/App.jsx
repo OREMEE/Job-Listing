@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Hero from "./components/Hero";
+import LoadCard from "./components/LoadingCard";
 import Card from "./components/Card";
 
 // TODO: Replace this with your hosted API URL when ready
@@ -90,7 +90,7 @@ function App() {
           minHeight: "400px",
         }}
       >
-        {/* Warm glow blobs */}
+     
         <div
           className="absolute top-10 left-1/3 w-80 h-80 rounded-full opacity-20 pointer-events-none"
           style={{ background: "#C4622D", filter: "blur(80px)" }}
@@ -121,10 +121,13 @@ function App() {
             </p>
           </div>
 
-          {/* Right — Stats */}
+          {/* Right */}
           <div className="flex flex-row lg:flex-col gap-8 lg:gap-4 lg:text-left">
             <div>
-              <p className="text-brown-mid font-body text-xs font-bold uppercase tracking-widest mb-1">
+              <p className="text-bro
+              
+              
+              wn-mid font-body text-xs font-bold uppercase tracking-widest mb-1">
                 Open Roles
               </p>
               <p className="text-white font-display font-bold text-4xl">
@@ -184,8 +187,7 @@ function App() {
                   strokeLinecap="round"
                 />
               </svg>
-              {/* Divider */}
-              <div className="w-px h-lg-6 bg-sand-light" />
+                            <div className="w-px h-lg-6 bg-sand-light" />
               {filters.map((filter) => (
                 <div
                   key={filter}
@@ -229,7 +231,7 @@ function App() {
         {isLoading ? (
           <div className="flex flex-col gap-6">
             {[1, 2, 3].map((n) => (
-              <Hero key={n} />
+              <LoadCard key={n} />
             ))}
           </div>
         ) : (
