@@ -3,7 +3,7 @@ import LoadCard from "./components/LoadingCard";
 import Card from "./components/Card";
 
 // TODO: Replace this with your hosted API URL when ready
-const API_URL = "https://jobs-api-iwks.onrender.com/api/jobs";
+const API_URL = "https://jobs-api-l3e2.onrender.com/api/jobs";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -90,6 +90,7 @@ function App() {
           minHeight: "400px",
         }}
       >
+     
         <div
           className="absolute top-10 left-1/3 w-80 h-80 rounded-full opacity-20 pointer-events-none"
           style={{ background: "#C4622D", filter: "blur(80px)" }}
@@ -123,12 +124,10 @@ function App() {
           {/* Right */}
           <div className="flex flex-row lg:flex-col gap-8 lg:gap-4 lg:text-left">
             <div>
-              <p
-                className="text-bro
+              <p className="text-bro
               
               
-              wn-mid font-body text-xs font-bold uppercase tracking-widest mb-1"
-              >
+              wn-mid font-body text-xs font-bold uppercase tracking-widest mb-1">
                 Open Roles
               </p>
               <p className="text-white font-display font-bold text-4xl">
@@ -188,7 +187,7 @@ function App() {
                   strokeLinecap="round"
                 />
               </svg>
-              <div className="w-px h-lg-6 bg-sand-light" />
+                            <div className="w-px h-lg-6 bg-sand-light" />
               {filters.map((filter) => (
                 <div
                   key={filter}

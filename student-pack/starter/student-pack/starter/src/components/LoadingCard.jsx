@@ -1,4 +1,4 @@
-function LoadCard() {
+function Hero() {
   return (
     <div className="bg-white rounded-card shadow-card animate-pulse p-6 flex flex-col lg:flex-row lg:items-center gap-6">
       {/* Logo placeholder */}
@@ -21,4 +21,4 @@ function LoadCard() {
   )
 }
  
-export default LoadCard
+export default Hero
